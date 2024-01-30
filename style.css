@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@700&family=Raleway&family=Roboto&family=Tenor+Sans&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    background: #000;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* herdando a cor do elemento pai */
+    transition: 200ms ease;
+}
+
+#navbar {
+    width: 100%;
+    height: 80px;
+    background: #000;
+    opacity: 1;
+    color: #fff;
+    position: absolute;
+    transition: 500ms ease;
+    z-index: 1;
+}
+
+#second-navbar {
+    width: 100%;
+    height: 80px;
+    background: #000;
+    opacity: 0;
+    color: #fff;
+    position: fixed;
+    transition: 500ms ease;
+}
+
+#second-navbar:hover {
+    opacity: 1;
+}
+
+.navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /*como é filho, margin: auto leva automaticamente para o centro. (muito útil) */
+    display: flex;
+    justify-content: space-between;
+    /* alinhamento horizontal */
+    align-items: center; 
+    /* alinhamento vertical */
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Raleway', 'sans-serif';
+    /* "rem": vezes o tamanho padrão do texto */
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navbar-items li {
+    padding: 15px;
+}
+
+.navbar-items a:hover {
+    color: #555;
+}
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url(Resources/HardSolve.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: color;
+}
+
+.showcase-container {
+    text-align: center;
+}
+
+.showcase-container h2 {
+    font-size: 5rem;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.showcase-container p {
+    font-style: italic;
+    font-size: 2.5rem;
+    padding: 10px 0px;
+}
+
+.btn {
+    display: inline-block;
+    /* considerando como um bloco/div */
+    padding: 15px 60px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background: #fff;
+    color: #000;
+    border-radius: 25px;
+    transition: 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+}
+
+#problem {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    color: #111;
+}
+
+.first-headline {
+    font-size: 4rem;
+    font-family: 'Raleway', 'sans-serif';
+    text-align: center;
+    padding: 40px 90px 70px 90px;
+    letter-spacing: 2px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* quatro colunas que ocupem uma fração da div total */
+    justify-items: center;
+    padding: 0px 35px 100px 35px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content e align-items se invertem ao utilizar flex-direction assim */
+    width: 70%;
+    height: 30vh;
+
+    background: #000;
+    color: #fff;
+    border-radius: 39px;
+    box-shadow: 0px 2px 23px #26395338;
+    transition: 500ms ease;
+}
+
+.top-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 1.5rem;
+}
+
+.media-card {
+    padding: 40px;
+    text-align: center;
+    font-family: 'Nunito', 'sans-serif';
+}
+
+.card:hover {
+    background: #fff;
+    color: #000;
+}
+
+.we-do {
+    width: 100%;
+    height: 36.4vh;
+    background: url(Resources/roman-spiridonov-FemeYrbdMWE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.800);
+    background-blend-mode: color;
+    display: flex;
+    align-items: center;
+}
+
+.we-do-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* deixando os elementos como se fosse uma coluna */
+    /* eixos x e y se invertem */
+    align-items: end;
+    justify-content: center;
+    padding: 0px 90px 0px 0px;
+}
+
+.we-do-headline {
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Tenor Sans', 'sans-serif';
+    text-align: right;
+    width: 90%;
+    /* 90% da classe pai */
+    margin-bottom: 30px;
+}
+
+.we-do .media {
+    font-size: 3rem;
+    font-family: 'Nunito', 'sans-serif';
+    color: #757474;
+    text-align: right;
+    width: 94%;
+}
+
+.inter-background {
+    width: 100%;
+    height: 20vh;
+    background: #000;
+}
+
+#opinions {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opinions-headline {
+    color: #fff;
+    font-size: 4.1rem;
+    font-family: 'Tenor Sans', 'sans-serif';
+    padding-left: 130px;
+}
+
+.opinions-container {
+    width: 54%;
+    height: 100%;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 150px 0px;
+}
+
+.opinion {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 28%;
+    border-radius: 100px 0px 0px 100px;
+    box-shadow: 0px 2px 23px #26395338;
+    border: 2px solid #fff;
+    /* cima esquerda, cima direita, baixo direita, baixo esquerda */
+
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+
+    transition: 500ms ease;
+}
+
+.opinion-2 {
+    width: 90%;
+}
+
+.opinion-3 {
+    width: 80%;
+}
+
+.opinion-image {
+    height: 170px;
+    width: 170px;
+    border-radius: 100px;
+    margin: 14px;
+    object-fit: cover;
+}
+
+.opinion:hover {
+    background: #000;
+    color: #fff;
+    
+}
+
+.name-comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.name-comment h1 {
+    padding-bottom: 15px;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(Resources/carlos-irineu-da-costa-bjsaHc2jx3Y-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+.contact-container {
+    width: 40%;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-container h2 {
+    font-size: 5rem;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-contact {
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+#footer a:hover {
+    color: #555;
+}
+
+@media (max-width: 1024px) {
+
+    #navbar {
+        height: 100px;
+    }
+
+    #second-navbar {
+        height: 100px;
+        width: 100%;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar-items {
+        padding: 6px;
+    }
+
+    .showcase-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .showcase-container p {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 15px 55px;
+    }
+
+    #problem {
+        height: 330vh;
+        /* resolvendo a sobreposição das sections */
+    }
+    
+    .first-headline {
+        font-size: 2rem;
+        padding: 40px 10px 24px 10px;
+        letter-spacing: 1px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .card {
+        margin: 20px;
+        height: 50vh;
+    }
+
+    .we-do {
+        height: 80vh;
+        z-index: 1;
+    }
+
+    .we-do-container {
+        padding: 0px;
+        align-items: center;
+    }
+
+    .we-do-headline {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .we-do .media {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .inter-background {
+        height: 400px;
+    }
+
+    #opinions {
+        flex-direction: column;
+        height: 190vh;
+    }
+
+    .opinions-headline {
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .opinions-container {
+        align-items: center;
+        padding: 0px;
+        justify-content: start;
+    }
+
+    .opinion {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .opinion-2 {
+        width: 40vh;
+        margin: 80px 0px;
+    }
+
+    .opinion-3 {
+        width: 40vh;
+    }
+
+    .opinion-image {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .name-comment {
+        align-items: center;
+        /* padding: 20px; */
+    }
+
+    .name-comment p {
+        text-align: center;
+        font-size: .9rem;
+        padding: 0px 10px;
+    }
+
+    #contact {
+        height: 800px;
+    }
+
+    .contact-container {
+        width: 70%;
+    }
+
+    .contact-container h2 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .button-contact {
+        padding: 15px 60px;
+        margin-bottom: 8px;
+    }
+
+    #footer {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .navbar-items li {
+        padding: 5px;
+    }
+}
