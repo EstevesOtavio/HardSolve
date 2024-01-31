@@ -363,8 +363,7 @@ a {
 }
 
 .button-contact {
-    padding: 2.5vh 3.5vw;
-    border-radius: 5vw;
+    border-radius: 5vh;
 }
 
 #footer {
@@ -372,6 +371,7 @@ a {
     color: #fff;
     padding: 3vh;
     text-align: center;
+    font-size: 1vw;
 }
 
 #footer a:hover {
@@ -381,21 +381,21 @@ a {
 @media (max-width: 700px) {
 
     #navbar {
-        height: 100px;
+        height: 12vh;
     }
 
     #second-navbar {
-        height: 120px;
+        height: 12vh;
         width: 100%;
     }
 
     .navbar-container {
         flex-direction: column;
-        padding: 20px;
+        padding: 2vh;
     }
 
     .navbar-items {
-        padding: 6px;
+        padding: 2%;
     }
 
     .showcase-container h2 {
@@ -407,30 +407,36 @@ a {
     }
 
     .btn {
-        padding: 15px 55px;
+        padding: 2vh 14vw;
         font-size: 2.5vh;
     }
 
     #problem {
-        height: 430vh;
+        height: 422vh;
         /* resolvendo a sobreposição das sections */
     }
     
     .first-headline {
-        font-size: 2rem;
-        padding: 40px 10px 24px 10px;
-        letter-spacing: 1px;
+        font-size: 4vh;
+        padding: 5vh 6vw 5vh 6vw;
+        letter-spacing: .5vw;
     }
 
     .cards-container {
-        padding-bottom: 1vh;
+        padding: 0vh;
+        /* padding-bottom: 1vh; */
         grid-template-columns: 1fr;
+        margin-bottom: 5vh;
     }
 
     .card {
         margin: 4vh 0vh;
         height: 70vh;
         width: 85vw;
+    }
+
+    .card-1 {
+        margin-top: 0vh;
     }
 
     .top-card {
@@ -443,7 +449,7 @@ a {
     }
 
     .we-do {
-        height: 80vh;
+        height: 90vh;
     }
 
     .we-do-container {
@@ -457,91 +463,82 @@ a {
     }
 
     .we-do .media {
-        margin-top: o;
         font-size: 4.5vh;
         text-align: center;
     }
 
     #opinions {
         flex-direction: column;
+        justify-content: center;
         height: 190vh;
     }
 
     .opinions-headline {
-        font-size: 2.1rem;
+        font-size: 6vh;
         text-align: center;
-        padding: 60px 40px;
-        text-align: center;
+        padding: 8vh 15vw 0vh 15vw;
     }
 
     .opinions-container {
+        width: 100%;
+        padding: 1vh 0vw 8vh 0vw;
+        justify-content: space-around;
         align-items: center;
-        padding: 0px;
-        justify-content: start;
     }
 
     .opinion {
         width: 40vh;
-        height: 40vh;
-        border-radius: 20px;
+        height: auto;
+        border-radius: 4vh;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 0px;
-    }
-
-    .opinion-2 {
-        width: 40vh;
-        margin: 80px 0px;
-    }
-
-    .opinion-3 {
-        width: 40vh;
+        justify-content: space-between;
+        padding: 2.7vh 4vw;
     }
 
     .opinion-image {
-        height: 70px;
-        width: 70px;
-        margin-bottom: 3vh;
+        margin-bottom: 2vh;
     }
 
     .name-comment {
+        width: 100%;
         align-items: center;
-        /* padding: 20px; */
+        padding: 1.5vw;
     }
 
     .name-comment p {
         text-align: center;
-        font-size: .9rem;
-        padding: 0px 10px;
+        font-size: 2.1vh;
+        /* padding: 0px 10px; */
     }
 
     #contact {
-        height: 800px;
+        height: 100vh;
     }
 
     .contact-container {
-        width: 70%;
+        width: 100%;
     }
 
     .contact-container h2 {
         width: 100%;
-        font-size: 3rem;
+        font-size: 7vh;
     }
 
     .buttons-container {
         flex-direction: column;
-        width: 90%;
-        margin: auto;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0vh 25vw;
+        /* display flex faz os botões esticarem com flex-direction: coloumn. Por isso utilizar justify-content e padding dos lados*/
     }
 
     .button-contact {
-        padding: 15px 60px;
-        margin-bottom: 8px;
+        font-size: 2vh;
     }
 
     #footer {
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 }
 
