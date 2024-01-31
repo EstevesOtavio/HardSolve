@@ -13,12 +13,25 @@ html {
 
 body {
     font-family: 'Roboto', 'sans-serif';
-    background: #000;
 }
 
-/* body::-webkit-scrollbar {
-    width: 0px;
-} */
+body::-webkit-scrollbar {
+    width: .4vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.199);
+    /* border-radius: .2vw; */
+    transition: 800ms ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.377);
+}
 
 a {
     text-decoration: none;
@@ -539,11 +552,5 @@ a {
 
     #footer {
         font-size: 2vh;
-    }
-}
-
-@media (max-width: 280px) {
-    .navbar-items li {
-        padding: 5px;
     }
 }
