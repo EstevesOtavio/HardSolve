@@ -169,7 +169,7 @@ a {
 
     background: #000;
     color: #fff;
-    border-radius: 2.7vw;
+    border-radius: 5vh;
     
     transition: 500ms ease;
     padding: .5vw;
@@ -181,14 +181,14 @@ a {
     align-items: center;
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
-    font-size: 1vw;
+    font-size: 2vh;
 }
 
 .media-card {
     padding: 1.8vw;
     text-align: center;
     font-family: 'Nunito', 'sans-serif';
-    font-size: 1vw;
+    font-size: 1.5vh;
 }
 
 .card:hover {
@@ -412,7 +412,7 @@ a {
     }
 
     #problem {
-        height: 330vh;
+        height: 430vh;
         /* resolvendo a sobreposição das sections */
     }
     
@@ -423,34 +423,42 @@ a {
     }
 
     .cards-container {
+        padding-bottom: 1vh;
         grid-template-columns: 1fr;
-        padding-bottom: 50px;
-        padding-left: 5px;
-        padding-right: 5px;
     }
 
     .card {
-        margin: 20px;
-        height: 50vh;
+        margin: 4vh 0vh;
+        height: 70vh;
+        width: 85vw;
+    }
+
+    .top-card {
+        font-size: 4vh;
+    }
+    
+    .media-card {
+        padding: 4vh;
+        font-size: 2vh;
     }
 
     .we-do {
         height: 80vh;
-        z-index: 1;
     }
 
     .we-do-container {
-        padding: 0px;
-        align-items: center;
+        padding: 8vh 0vh;
     }
 
     .we-do-headline {
-        font-size: 2.5rem;
+        font-size: 7vh;
         text-align: center;
+        margin-bottom: 0vh;
     }
 
     .we-do .media {
-        font-size: 1.5rem;
+        margin-top: o;
+        font-size: 4.5vh;
         text-align: center;
     }
 
@@ -494,7 +502,7 @@ a {
     .opinion-image {
         height: 70px;
         width: 70px;
-        margin-bottom: 10px;
+        margin-bottom: 3vh;
     }
 
     .name-comment {
