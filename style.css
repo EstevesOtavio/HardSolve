@@ -340,12 +340,12 @@ section {
 }
 
 .opinion:nth-child(2) {
-    width: 90%;
+    width: 93%;
     transition-delay: 1200ms;
 }
 
 .opinion:nth-child(3) {
-    width: 80%;
+    width: 86%;
     transition-delay: 1300ms;
 }
 
