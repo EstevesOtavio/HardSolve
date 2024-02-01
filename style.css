@@ -511,6 +511,7 @@ section {
         margin: 4vh 0vh;
         height: 70vh;
         width: 85vw;
+        padding: 0vh 5vw;
     }
 
     .card:nth-child(1) {
