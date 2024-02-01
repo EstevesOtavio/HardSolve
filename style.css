@@ -52,6 +52,7 @@ section {
     color: #fff;
     position: absolute;
     transition: 500ms ease;
+    z-index: 1;
 }
 
 #second-navbar {
@@ -83,7 +84,7 @@ section {
 .logo {
     font-size: 3.2vh;
     font-family: 'Raleway', 'sans-serif';
-    /* "rem": vezes o tamanho padrão do texto */
+    transition-delay: 400ms;
 }
 
 .navbar-items {
@@ -95,6 +96,22 @@ section {
 .navbar-items li {
     padding: 1vh;
     font-size: 1.65vh;
+}
+
+.navbar-items li:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.navbar-items li:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.navbar-items li:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.navbar-items li:nth-child(4) {
+    transition-delay: 800ms;
 }
 
 .navbar-items a:hover {
@@ -319,17 +336,17 @@ section {
 }
 
 .opinion:nth-child(1) {
-    transition-delay: 200ms;
+    transition-delay: 1000ms;
 }
 
 .opinion:nth-child(2) {
     width: 90%;
-    transition-delay: 400ms;
+    transition-delay: 1200ms;
 }
 
 .opinion:nth-child(3) {
     width: 80%;
-    transition-delay: 600ms;
+    transition-delay: 1300ms;
 }
 
 .opinion-image {
@@ -422,11 +439,7 @@ section {
     transition: all 1s;
 }
 
-.showcase-container{
-    transform: translateX(0);
-}
-
-.contact-container {
+.navbar-container, .logo, .navbar:nth-child(n), .navbar-items:nth-child(n), .showcase-container, .contact-container{
     transform: translateX(0);
 }
 
@@ -435,6 +448,12 @@ section {
     filter: blur(0);
     transform: translateX(0);
     transition: all 1s;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 @media (max-width: 700px) {
