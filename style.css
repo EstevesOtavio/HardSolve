@@ -441,6 +441,8 @@ section {
 
 .navbar-container, .logo, .navbar:nth-child(n), .navbar-items:nth-child(n), .showcase-container, .contact-container{
     transform: translateX(0);
+    overflow: hidden;
+    /* É necessário cuidado ao lidar com filhas, propriedas como overflow podem não se aplicar a elas de modo generalizado, necessitando de menção específica */
 }
 
 .show {
