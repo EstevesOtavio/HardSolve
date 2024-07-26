@@ -465,7 +465,8 @@ section {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px), (width: 820px) and (height: 1180px), (width: 1024px) and (height: 1366px), (width: 912px) and (height: 1368px), 
+(width: 853px) and (height: 1280px) {
 
     #navbar {
         height: 12vh;
